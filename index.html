@@ -1,144 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akanksha Bone - Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akanksha Bone | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #f5f7fa;
-      font-family: 'Segoe UI', sans-serif;
-      color: #343a40;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f8;
+      color: #2c3e50;
+    }
+    .hero {
+      background: linear-gradient(135deg, #4f46e5, #3b82f6);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
     }
     .profile-img {
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
       object-fit: cover;
       border-radius: 50%;
-      border: 3px solid #0d6efd;
+      border: 4px solid white;
+      margin-bottom: 15px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .section {
+      padding: 60px 20px;
     }
     .section-title {
-      font-size: 1.75rem;
-      font-weight: 700;
-      border-bottom: 2px solid #0d6efd;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+      border-left: 5px solid #3b82f6;
+      padding-left: 10px;
+      margin-bottom: 30px;
     }
-    .card {
-      border: none;
-      border-radius: 0.75rem;
-      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
-      margin-bottom: 1rem;
-    }
-    .footer {
-      font-size: 0.9rem;
-      color: #6c757d;
+    .project-card, .info-card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+      margin-bottom: 25px;
     }
     a {
+      color: #3b82f6;
       text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .social-icons a {
+      color: white;
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+    .btn-custom {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 25px;
+    }
+    footer {
+      background: #1f2937;
+      color: #9ca3af;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <div class="container py-5">
-    <div class="text-center mb-5">
-      <img src="MYSELF.png" alt="Profile Picture" class="profile-img mb-3" />
-      <h1 class="fw-bold">Akanksha Bone</h1>
-      <p class="text-muted">B.Tech in Computer Science & Engineering | Data Science & ML Enthusiast</p>
+
+<section class="hero">
+  <img src="MYSELF.png" alt="Profile Picture" class="profile-img">
+  <h1>Akanksha Bone</h1>
+  <p>Frontend Developer & Data Science Enthusiast</p>
+  <div class="social-icons mt-3">
+    <a href="https://www.linkedin.com/in/akanksha-bone" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/Akankshabone" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:akankshabone25@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+</section>
+
+<div class="container">
+
+  <section class="section">
+    <h2 class="section-title">About Me</h2>
+    <div class="info-card">
       <p>
-        <a href="mailto:akankshabone25@gmail.com">akankshabone25@gmail.com</a> |
-        <a href="https://www.linkedin.com/in/akanksha-bone-8031a4299" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/Akankshabone" target="_blank">GitHub</a>
+        I’m a tech enthusiast currently pursuing B.Tech in Computer Science at Terna College of Engineering. I specialize in frontend development and have a deep interest in data science. I love building responsive web applications and intelligent systems that provide real-world value.
       </p>
     </div>
+  </section>
 
-    <!-- Education -->
-    <div>
-      <h2 class="section-title">Education</h2>
-      <div class="card p-3">
-        <ul class="list-unstyled mb-0">
-          <li><strong>B.Tech in Computer Science</strong> - Terna College of Engineering, Dharashiv (2025) — 75.53%</li>
-          <li><strong>Diploma in Computer Science</strong> - Government Polytechnic, Dharashiv (2021) — 82.74%</li>
-          <li><strong>SSC</strong> - Bhosale High School, Dharashiv (2019) — 82%</li>
-        </ul>
-      </div>
+  <section class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="info-card">
+      <ul>
+        <li><strong>B.Tech (Computer Science)</strong>, Terna College of Engineering – 75.53% (2025)</li>
+        <li><strong>Diploma (Computer Science)</strong>, Govt. Polytechnic – 82.74% (2021)</li>
+        <li><strong>SSC</strong>, Bhosale High School – 82% (2019)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Skills</h2>
+    <div class="info-card">
+      <ul class="row">
+        <li class="col-md-4">Python, C, C++</li>
+        <li class="col-md-4">HTML, CSS, JavaScript</li>
+        <li class="col-md-4">Flask, Bootstrap</li>
+        <li class="col-md-4">SQL, Pandas, NumPy</li>
+        <li class="col-md-4">Scikit-learn, Matplotlib</li>
+        <li class="col-md-4">Git, GitHub, Linux</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-card">
+      <h5>AI Travel Itinerary Generator</h5>
+      <p>This application uses Gemini 1.5 Flash and Flask to generate real-time, personalized travel plans. It suggests destinations, optimizes routes, and recommends activities.</p>
+      <p><strong>Tech Stack:</strong> Python, Flask, Gemini 1.5</p>
+      <a class="btn btn-custom" href="https://akankshab.pythonanywhere.com/" target="_blank">View Live</a>
     </div>
 
-    <!-- Skills -->
-    <div>
-      <h2 class="section-title">Skills</h2>
-      <div class="card p-3">
-        <div class="row">
-          <div class="col-md-6">
-            <ul>
-              <li><strong>Languages:</strong> Python, C, C++</li>
-              <li><strong>Web:</strong> HTML, CSS, JavaScript, Bootstrap</li>
-              <li><strong>Database:</strong> SQL</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <ul>
-              <li><strong>Data & ML Tools:</strong> Pandas, NumPy, Scikit-learn, R, Excel</li>
-              <li><strong>ML Techniques:</strong> Logistic Regression, Decision Trees, SVM, K-Means</li>
-              <li><strong>Other Tools:</strong> Git, REST APIs, VS Code, Jupyter Notebook</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <div class="project-card">
+      <h5>House Price Prediction</h5>
+      <p>An ML-powered app that predicts house prices based on various features using regression algorithms and EDA techniques.</p>
+      <p><strong>Tech Stack:</strong> Python, Flask, Scikit-learn, Pandas, NumPy</p>
+      <a class="btn btn-custom" href="https://akankshabone25.pythonanywhere.com/predict" target="_blank">Try Now</a>
     </div>
+  </section>
 
-    <!-- Projects -->
-    <div>
-      <h2 class="section-title">Projects</h2>
-      <div class="card p-3">
-        <ul class="list-unstyled mb-0">
-          <li class="mb-3">
-            <strong>Loan Prediction:</strong> ML-powered web app predicting loan approval based on user inputs like income, credit history, etc.<br />
-            <a href="https://github.com/Akankshabone/Loan-Prediction" target="_blank">GitHub</a> |
-            <a href="https://akankshabone25.pythonanywhere.com/predict" target="_blank">Live Demo</a>
-          </li>
-          <li>
-            <strong>House Price Prediction:</strong> Interactive web app estimating house prices using regression models.<br />
-            <a href="#">GitHub</a> |
-            <a href="#">Live Demo</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <section class="section">
+    <h2 class="section-title">Internships</h2>
+    <div class="info-card">
+      <p><strong>Data Science Intern</strong>, Anyatam (Aug 2024 – Jan 2025)<br>
+      Worked on diabetes prediction using ML models. Applied Linear Regression, Decision Trees, and K-Means for classification and clustering.</p>
 
-    <!-- Experience -->
-    <div>
-      <h2 class="section-title">Experience</h2>
-      <div class="card p-3">
-        <ul class="list-unstyled mb-0">
-          <li class="mb-3">
-            <strong>Data Science & ML Intern - Anyatam (Aug 2024 - Jan 2025):</strong><br />
-            Built a diabetes prediction model using Logistic Regression and SVM; performed data analysis with Pandas and NumPy.
-          </li>
-          <li>
-            <strong>Data Science Intern - Cognifz (Jan 2025 - Feb 2025):</strong><br />
-            Analyzed datasets, applied ML algorithms, and delivered insights for strategic business decisions.
-          </li>
-        </ul>
-      </div>
+      <p><strong>Data Analyst Intern</strong>, Cognifz (Jan 2025 – Feb 2025)<br>
+      Analyzed datasets, cleaned data, and implemented statistical models for business insights.</p>
     </div>
+  </section>
 
-    <!-- Achievements -->
-    <div>
-      <h2 class="section-title">Achievements & Leadership</h2>
-      <div class="card p-3">
-        <ul class="mb-0">
-          <li>Hackathon participant – Water preservation in agriculture using sensors (2024)</li>
-          <li>Organizer – College cultural and technical festivals</li>
-        </ul>
-      </div>
+  <section class="section">
+    <h2 class="section-title">Leadership & Activities</h2>
+    <div class="info-card">
+      <ul>
+        <li>Hackathon 2024: Developed an agriculture water-saving solution using sensors.</li>
+        <li>College Fest: Organizer of cultural and technical events.</li>
+      </ul>
     </div>
+  </section>
 
-    <!-- Footer -->
-    <div class="text-center mt-5 footer">
-      <p>© 2025 Akanksha Bone | Designed by Akanksha Bone</p>
+  <section class="section">
+    <h2 class="section-title">Personal Information</h2>
+    <div class="info-card">
+      <ul>
+        <li><strong>Address:</strong> Balaji Nagar, Dharashiv, 413501</li>
+        <li><strong>Date of Birth:</strong> 25 September 2002</li>
+        <li><strong>Languages:</strong> English, Marathi, Hindi</li>
+      </ul>
     </div>
-  </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 Akanksha Bone • All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
+
+      
+       
+   
